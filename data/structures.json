@@ -32,6 +32,18 @@
       ],
       "createdAt": "2026-07-24T09:10:57.688Z",
       "updatedAt": "2026-07-24T09:10:57.688Z"
+    },
+    {
+      "id": "prj-1784889206515-6dhc05",
+      "name": "University Annual Report 2025–26 — Copy",
+      "description": "Institutional annual-report project",
+      "memberIds": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "createdAt": "2026-07-24T10:33:26.515Z",
+      "updatedAt": "2026-07-24T10:33:26.516Z"
     }
   ],
   "structures": [
@@ -56,6 +68,28 @@
       "createdBy": "u1",
       "createdAt": "2026-07-24T00:00:00Z",
       "updatedAt": "2026-07-24T00:00:00Z"
+    },
+    {
+      "id": "str-1784889206516-rtd8gy",
+      "projectId": "prj-1784889206515-6dhc05",
+      "name": "Main Annual Report Structure",
+      "description": "Primary report structure",
+      "status": "Draft",
+      "version": 1,
+      "createdBy": "u1",
+      "createdAt": "2026-07-24T10:33:26.516Z",
+      "updatedAt": "2026-07-24T10:33:26.516Z"
+    },
+    {
+      "id": "str-1784889206516-z68lox",
+      "projectId": "prj-1784889206515-6dhc05",
+      "name": "Executive Summary Structure",
+      "description": "Short executive version",
+      "status": "Draft",
+      "version": 1,
+      "createdBy": "u1",
+      "createdAt": "2026-07-24T10:33:26.516Z",
+      "updatedAt": "2026-07-24T10:33:26.516Z"
     }
   ],
   "elements": [
@@ -163,6 +197,126 @@
       "id": "el-1784884334145-73cuhz",
       "structureId": "str-main",
       "parentId": "el-1784884330724-js3wgu",
+      "type": "heading3",
+      "title": "New Heading 3",
+      "content": "",
+      "order": 0,
+      "properties": {
+        "owner": "",
+        "reviewer": "",
+        "wordLimit": 600,
+        "description": "",
+        "include": [],
+        "exclude": [],
+        "evidenceTypes": [],
+        "expectedMetrics": [],
+        "contributors": []
+      }
+    },
+    {
+      "id": "el-1784889206516-8i7md4",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": null,
+      "type": "title",
+      "title": "Annual Report 2025–26",
+      "content": "",
+      "order": 0,
+      "properties": {}
+    },
+    {
+      "id": "el-1784889206516-ntsawv",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": null,
+      "type": "chapter",
+      "title": "Institutional Overview",
+      "content": "",
+      "order": 1,
+      "properties": {
+        "owner": "Report Administrator",
+        "reviewer": "Quality Reviewer",
+        "wordLimit": 1200,
+        "description": "Overview of institutional identity, strategy and progress",
+        "include": [],
+        "exclude": [],
+        "evidenceTypes": [],
+        "expectedMetrics": [],
+        "contributors": []
+      }
+    },
+    {
+      "id": "el-1784889206516-8gf6wx",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": "el-1784889206516-ntsawv",
+      "type": "heading1",
+      "title": "Vision, Mission and Values",
+      "content": "",
+      "order": 0,
+      "properties": {
+        "owner": "Report Administrator",
+        "reviewer": "Quality Reviewer",
+        "wordLimit": 600,
+        "description": "",
+        "include": [],
+        "exclude": [],
+        "evidenceTypes": [],
+        "expectedMetrics": [],
+        "contributors": []
+      }
+    },
+    {
+      "id": "el-1784889206516-6me8tc",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": "el-1784889206516-8gf6wx",
+      "type": "paragraph",
+      "title": "Purpose note",
+      "content": "Explain major developments against the institutional vision and mission.",
+      "order": 1,
+      "properties": {}
+    },
+    {
+      "id": "el-1784889206516-ux2z6j",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": null,
+      "type": "chapter",
+      "title": "Academic Development",
+      "content": "",
+      "order": 2,
+      "properties": {
+        "owner": "Report Administrator",
+        "reviewer": "Quality Reviewer",
+        "wordLimit": 2000,
+        "description": "",
+        "include": [],
+        "exclude": [],
+        "evidenceTypes": [],
+        "expectedMetrics": [],
+        "contributors": []
+      }
+    },
+    {
+      "id": "el-1784889206516-bher7z",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": "el-1784889206516-8gf6wx",
+      "type": "heading2",
+      "title": "New Heading 2",
+      "content": "",
+      "order": 0,
+      "properties": {
+        "owner": "",
+        "reviewer": "",
+        "wordLimit": 600,
+        "description": "",
+        "include": [],
+        "exclude": [],
+        "evidenceTypes": [],
+        "expectedMetrics": [],
+        "contributors": []
+      }
+    },
+    {
+      "id": "el-1784889206516-bnzvou",
+      "structureId": "str-1784889206516-rtd8gy",
+      "parentId": "el-1784889206516-bher7z",
       "type": "heading3",
       "title": "New Heading 3",
       "content": "",
@@ -1050,6 +1204,52 @@
           }
         }
       ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "rpt-main",
+      "projectId": "prj-annual-2026",
+      "name": "University Annual Report 2025–26",
+      "description": "Primary institutional annual report",
+      "status": "Draft",
+      "activeStructureId": "str-main",
+      "activeStructureVersion": 8,
+      "createdAt": "2026-07-24T00:00:00Z",
+      "updatedAt": "2026-07-24T10:32:18.965Z"
+    },
+    {
+      "id": "rpt-summary",
+      "projectId": "prj-annual-2026",
+      "name": "Executive Summary Report",
+      "description": "Executive-level report",
+      "status": "Draft",
+      "activeStructureId": "str-summary",
+      "activeStructureVersion": 1,
+      "createdAt": "2026-07-24T00:00:00Z",
+      "updatedAt": "2026-07-24T00:00:00Z"
+    },
+    {
+      "id": "rpt-1784889206516-cdrjz5",
+      "projectId": "prj-1784889206515-6dhc05",
+      "name": "University Annual Report 2025–26",
+      "description": "Primary institutional annual report",
+      "status": "Draft",
+      "activeStructureId": "str-1784889206516-rtd8gy",
+      "activeStructureVersion": 1,
+      "createdAt": "2026-07-24T10:33:26.516Z",
+      "updatedAt": "2026-07-24T10:33:26.516Z"
+    },
+    {
+      "id": "rpt-1784889206516-qmnwxi",
+      "projectId": "prj-1784889206515-6dhc05",
+      "name": "Executive Summary Report",
+      "description": "Executive-level report",
+      "status": "Draft",
+      "activeStructureId": "str-1784889206516-z68lox",
+      "activeStructureVersion": 1,
+      "createdAt": "2026-07-24T10:33:26.516Z",
+      "updatedAt": "2026-07-24T10:33:26.516Z"
     }
   ]
 }

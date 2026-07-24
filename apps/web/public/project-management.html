@@ -109,5 +109,5 @@
   function apply(){const q=search.value.toLowerCase().trim();const f=filter.value;document.querySelectorAll('#roadmap tbody tr').forEach(r=>{const okQ=!q||r.innerText.toLowerCase().includes(q);const okF=f==='all'||r.dataset.status===f;r.classList.toggle('hidden',!(okQ&&okF));});}
   search.addEventListener('input',apply);filter.addEventListener('change',apply);function resetFilters(){search.value='';filter.value='all';apply();}
 </script>
-</body>
+<section style="margin:24px"><h2>v7.3.0 — Project, Report and Structure Menus</h2><p><strong>Implemented:</strong> contextual menus, report persistence, active version-pinned structure assignment, Save As, export and guarded deletion.</p></section></body>
 </html>

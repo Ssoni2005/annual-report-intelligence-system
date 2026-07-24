@@ -1,7 +1,7 @@
 {
   "name": "annual-report-intelligence-system",
   "private": true,
-  "version": "5.0.1-project-modal-stabilized",
+  "version": "5.1.0-project-report-structure-menus",
   "workspaces": [
     "apps/web",
     "apps/api"

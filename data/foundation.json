@@ -195,6 +195,14 @@
   ],
   "auditLogs": [
     {
+      "id": "a-1784889182053-de0qx",
+      "time": "2026-07-24T10:33:02.053Z",
+      "actor": "u1",
+      "action": "Created project",
+      "target": "new",
+      "detail": "Project prj-1784889182046-mi0zb5 created"
+    },
+    {
       "id": "a-1784884257691-ddv09",
       "time": "2026-07-24T09:10:57.691Z",
       "actor": "u1",

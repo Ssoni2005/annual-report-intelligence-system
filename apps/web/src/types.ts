@@ -14,6 +14,7 @@ export type NormalizedBlock={id:string;type:string;level?:number;text?:string;it
 export type NormalizedDocument={id:string;documentId:string;title:string;unit:string;reportingPeriod:string;language:string;pageCount:number;wordCount:number;parserVersion:string;status:string;quality:number;createdAt:string;warnings:string[];entities:Record<string,string[]>;blocks:NormalizedBlock[]};
 
 export type Project={id:string;name:string;description:string;memberIds:string[];createdAt:string;updatedAt:string};
+export type Report={id:string;projectId:string;name:string;description:string;status:string;activeStructureId:string|null;activeStructureVersion:number|null;createdAt:string;updatedAt:string};
 export type ReportStructure={id:string;projectId:string;name:string;description:string;status:string;version:number;createdBy:string;createdAt:string;updatedAt:string};
 export type StructureElementType='title'|'chapter'|'heading1'|'heading2'|'heading3'|'heading4'|'heading5'|'paragraph'|'bullets'|'numberedList'|'table'|'textBox'|'image';
 export type StructureElement={id:string;structureId:string;parentId:string|null;type:StructureElementType;title:string;content:string;order:number;properties:Record<string,any>};

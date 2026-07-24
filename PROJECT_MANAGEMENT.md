@@ -28,3 +28,17 @@ Status values represent verified functional maturity, not screen availability.
 - Aligned frontend `x-user-id` with backend project membership identity.
 - Added project-name validation and audit logging.
 - Updated local state immediately after successful creation so the new project becomes selected without a stale reload race.
+
+
+## v7.3.0 — Project, Report and Structure Menus
+
+**Status:** Implemented; local dependency-based build verification required.
+
+- [x] Project command menu and selector
+- [x] Report entity, APIs, command menu and selector
+- [x] Structure command menu and selector
+- [x] Active structure and structure-version reference on report
+- [x] Save As, export and delete operations
+- [x] ADR and changelog
+- [ ] Run npm install/npm run build in connected local environment
+- [ ] Browser interaction test
