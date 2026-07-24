@@ -77,3 +77,10 @@ Status values represent verified functional maturity, not screen availability.
 - Title and Chapter: unnumbered order-0 document objects
 - Heading 1: starts at 1
 - Lower headings: derived hierarchical numbering
+
+
+## v7.8 — Governed Caption Elements
+
+Status: Implemented; local build verification required.
+
+Table Caption, Image Caption, and Text Box Caption are governed one-to-one elements fixed immediately after their respective parent elements.

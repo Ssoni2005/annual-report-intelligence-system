@@ -1,7 +1,7 @@
 {
   "name": "annual-report-intelligence-system",
   "private": true,
-  "version": "5.0.2-hierarchy-numbering",
+  "version": "5.0.7-drag-placement-hints",
   "workspaces": [
     "apps/web",
     "apps/api"

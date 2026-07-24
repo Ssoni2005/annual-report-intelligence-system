@@ -1,3 +1,11 @@
+# v7.8 — Governed Caption Elements
+
+- Added Table Caption, Image Caption, and Text Box Caption elements.
+- Captions can only be created for their matching table, image, or text box.
+- Each parent permits only one caption.
+- Captions remain immediately after the parent and move/delete with it.
+- Added frontend and API validation for placement and uniqueness.
+
 # v7.6.0 — Document hierarchy numbering correction
 
 - Title and Chapter are treated as unnumbered order-0 document objects.
@@ -36,3 +44,8 @@
 - Added Escape-key handling, backdrop cancellation, initial focus, ARIA alert-dialog semantics, and keyboard-visible focus states.
 - Added a governed danger-button style consistent with the institutional interface.
 - Verified through static search that `alert()`, `confirm()`, and `prompt()` are no longer used in the web source.
+
+## v7.9 — Intuitive Drag Placement Hints
+- Added before, after, inside, and document-root drop previews to the Structure Tree.
+- Added explicit release labels and insertion lines so users can predict placement before dropping.
+- Restricted inside-drop highlighting to heading/document objects in line with the governed hierarchy.
