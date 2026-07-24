@@ -25,3 +25,31 @@
 .confirmClose{position:absolute;right:14px;top:14px;border:0;background:transparent;color:#708095;cursor:pointer;padding:4px;border-radius:5px}.confirmClose:hover{background:#f0f3f6}.confirmClose:disabled{opacity:.5;cursor:not-allowed}
 .confirmActions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:8px;border-top:1px solid #e7ebf0;margin:5px -22px -22px;padding:14px 22px}.btn.danger{background:#b42318;color:#fff;border-color:#b42318}.btn.danger:hover:not(:disabled){background:#912018;border-color:#912018}.btn.danger:focus-visible,.confirmClose:focus-visible{outline:3px solid rgba(23,105,194,.25);outline-offset:2px}
 @media(max-width:520px){.confirmDialog{grid-template-columns:40px 1fr;padding:18px}.confirmActions{margin:5px -18px -18px;padding:12px 18px}}
+
+/* v7.5 structure-tree interaction refinements */
+.structureWorkbench.inspectorHidden{grid-template-columns:1fr}
+.persistentInspector{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}
+.treeElement{position:relative}
+.structureNode{align-items:flex-start}
+.nodeBody{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px;padding-top:1px}
+.nodeBody .nodeText{width:100%}
+.inlineContent{font-size:12px;line-height:1.45;color:var(--muted);white-space:pre-wrap;cursor:pointer;border-radius:4px;padding:2px 4px;margin-left:-4px}
+.inlineContent:hover{background:var(--surface)}
+.inlineContent.collapsed{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;white-space:normal}
+.inlineContent.expanded{display:block;color:var(--text);background:var(--surface);border:1px solid var(--border);padding:8px;margin-top:3px}
+.nodeAdd,.nodeMenu{border:0;background:transparent;color:var(--muted);width:25px;height:25px;display:grid;place-items:center;border-radius:4px;cursor:pointer;flex:0 0 auto}
+.nodeAdd:hover,.nodeMenu:hover{background:var(--primary-soft);color:var(--primary)}
+.betweenAdd{width:20px;height:20px;border-radius:50%;border:1px solid var(--border);background:var(--panel);color:var(--muted);display:grid;place-items:center;margin:-2px 0 -2px 42px;opacity:0;cursor:pointer;position:relative;z-index:2}
+.treeElement:hover>.betweenAdd,.betweenAdd:focus{opacity:1}
+.betweenAdd:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-soft)}
+.emptyChildAdd{border:1px dashed var(--border);background:transparent;color:var(--muted);padding:6px 9px;border-radius:5px;display:flex;align-items:center;gap:5px;cursor:pointer;width:max-content}
+.emptyChildAdd:hover{border-color:var(--primary);color:var(--primary)}
+.elementContextMenu{position:fixed;z-index:120;width:250px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 16px 45px rgba(15,35,58,.22);padding:6px}
+.elementContextMenu .contextTitle{font-size:12px;font-weight:700;padding:8px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px solid var(--border);margin-bottom:4px}
+.elementContextMenu button{width:100%;border:0;background:transparent;padding:8px 9px;border-radius:5px;text-align:left;display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer}
+.elementContextMenu button:hover{background:var(--primary-soft)}
+.elementContextMenu button.danger{color:#a12424}
+.elementContextMenu label{display:grid;gap:5px;padding:7px 9px;font-size:11px;font-weight:700;color:var(--muted)}
+.elementContextMenu select{width:100%;font-size:12px}
+.contextDivider{height:1px;background:var(--border);margin:4px 0}
+@media(max-width:1050px){.persistentInspector{position:static;max-height:none}}

@@ -1,5 +1,15 @@
 # Changelog
 
+## v7.5 — Structure Tree Interaction Studio
+
+- Added exact insertion-point behaviour for every structure-tree + control.
+- Added inline add-child and add-after controls.
+- Added right-click element tools for type conversion, insertion and governed deletion.
+- Made the element inspector persistent and independently scrollable, with a hide/show control.
+- Added complete inline content display for content elements.
+- Added one-line collapsed paragraph previews with click-to-expand reading.
+- Preserved five-level hierarchy validation and automatic numbering.
+
 ## v7.3.0 — Project, Report and Structure Menus
 
 - Added contextual Project, Report and Structure command menus and selectors to Report Structure Studio.

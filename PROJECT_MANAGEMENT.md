@@ -58,3 +58,15 @@ Status values represent verified functional maturity, not screen availability.
 - Static browser-dialog scan: passed.
 - ZIP integrity: pending packaging step.
 - TypeScript/Vite build: requires `npm install` in the clean package; the packaging environment did not contain installed workspace dependencies.
+
+
+## v7.5 — Structure Tree Interaction Studio
+
+**Status:** Implemented; local dependency-backed build verification required.
+
+- Exact insertion controls at root, child, and after-element positions
+- Context menu for element type conversion and deletion
+- Persistent element inspector
+- Inline full-content reading
+- Collapsible one-line paragraph previews
+- Governed confirmation retained for destructive actions
