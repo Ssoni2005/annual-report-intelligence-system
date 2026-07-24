@@ -1,0 +1,19 @@
+export type Heading={id:string;title:string;level:number;parentId?:string;status:string;coverage:number;owner:string;reviewer?:string;wordLimit:number;description?:string;include?:string[];exclude?:string[];evidenceTypes?:string[];expectedMetrics?:string[];contributors?:string[];order?:number;locked?:boolean};
+export type Chunk={id:string;documentId:string;documentTitle?:string;preview:string;text?:string;tokens:number;status:string;sourceSection:string;headingPath?:string[];blockIds?:string[];unit:string;type?:string;topics:string[];metrics:Record<string,string|number>;dates?:string[];context?:Record<string,string>;quality?:number;version?:number;createdAt?:string;updatedAt?:string};
+export type ChunkProfile={id:string;name:string;targetTokens:number;maxTokens:number;minTokens:number;overlapTokens:number;preserveHeadings:boolean;preserveLists:boolean;preserveTables:boolean;eventAware:boolean;topicAware:boolean;status:string};
+export type ChunkJob={id:string;documentId:string;documentTitle:string;unit:string;profileId:string;status:string;progress:number;stage:string;strategy:string;createdAt:string;completedAt?:string|null;chunkCount:number;warnings:number};
+export type ChunkVersion={id:string;chunkId:string;version:number;createdAt:string;createdBy:string;reason:string;text:string};
+export type Mapping={headingId:string;headingTitle:string;score:number;assignment:string};
+export type Cycle={id:string;name:string;year:string;status:string;startDate:string;dueDate:string;structureId:string};
+export type Unit={id:string;name:string;code:string;head:string;contributors:number;status:string};
+export type User={id:string;name:string;email:string;role:string;unit:string;status:string};
+export type Submission={id:string;cycleId:string;unitId:string;unit:string;coordinator:string;email:string;deadline:string;status:string;completeness:number;reviewer:string;submittedAt?:string|null;documents:number;requiredItems:number;receivedItems:number;comments:number};
+export type SourceDocument={id:string;submissionId:string;title:string;unit:string;type:string;reportingPeriod:string;confidentiality:string;status:string;pages:number;sizeBytes:number;fileName:string;uploadedAt:string;uploadedBy:string;validation:{complete:boolean;issues:string[]};metadata:Record<string,string>;processingJob?:{id:string;queuedAt:string;stage:string}};
+export type ParsingJob={id:string;documentId:string;documentTitle:string;unit:string;fileName:string;status:string;progress:number;stage:string;createdAt:string;startedAt?:string|null;completedAt?:string|null;parser:string;warnings:number;error?:string|null};
+export type NormalizedBlock={id:string;type:string;level?:number;text?:string;items?:string[];caption?:string;columns?:string[];rows?:string[][];page:number;order:number;confidence:number};
+export type NormalizedDocument={id:string;documentId:string;title:string;unit:string;reportingPeriod:string;language:string;pageCount:number;wordCount:number;parserVersion:string;status:string;quality:number;createdAt:string;warnings:string[];entities:Record<string,string[]>;blocks:NormalizedBlock[]};
+
+export type Project={id:string;name:string;description:string;memberIds:string[];createdAt:string;updatedAt:string};
+export type ReportStructure={id:string;projectId:string;name:string;description:string;status:string;version:number;createdBy:string;createdAt:string;updatedAt:string};
+export type StructureElementType='title'|'chapter'|'heading1'|'heading2'|'heading3'|'heading4'|'heading5'|'paragraph'|'bullets'|'numberedList'|'table'|'textBox'|'image';
+export type StructureElement={id:string;structureId:string;parentId:string|null;type:StructureElementType;title:string;content:string;order:number;properties:Record<string,any>};

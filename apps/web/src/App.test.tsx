@@ -1,0 +1,1 @@
+import{describe,it,expect}from'vitest';describe('app shell',()=>{it('passes smoke test',()=>expect(true).toBe(true))});

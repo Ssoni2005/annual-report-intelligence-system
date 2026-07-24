@@ -1,0 +1,1 @@
+import{readStore}from'./store.js';console.log(`Seed data ready: ${readStore().headings.length} headings`)

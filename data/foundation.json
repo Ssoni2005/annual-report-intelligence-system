@@ -1,0 +1,237 @@
+{
+  "session": {
+    "user": {
+      "id": "u1",
+      "name": "Dr. Sitaram Soni",
+      "email": "admin@university.edu",
+      "role": "Report Administrator"
+    },
+    "token": "demo-token"
+  },
+  "cycles": [
+    {
+      "id": "cy-2025",
+      "name": "Annual Report 2025–26",
+      "year": "2025–26",
+      "status": "Active",
+      "startDate": "2025-06-01",
+      "dueDate": "2026-08-31",
+      "structureId": "st-main"
+    },
+    {
+      "id": "cy-2024",
+      "name": "Annual Report 2024–25",
+      "year": "2024–25",
+      "status": "Archived",
+      "startDate": "2024-06-01",
+      "dueDate": "2025-08-31",
+      "structureId": "st-prev"
+    }
+  ],
+  "structures": [
+    {
+      "id": "st-main",
+      "cycleId": "cy-2025",
+      "name": "University Annual Report Structure",
+      "version": 3,
+      "status": "Draft",
+      "updatedAt": "2026-07-24T06:00:00.000Z",
+      "updatedBy": "Dr. Sitaram Soni"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit-iqac",
+      "name": "IQAC",
+      "code": "IQAC",
+      "head": "Director IQAC",
+      "contributors": 4,
+      "status": "Active"
+    },
+    {
+      "id": "unit-sa",
+      "name": "Student Affairs",
+      "code": "SA",
+      "head": "Dean Student Affairs",
+      "contributors": 6,
+      "status": "Active"
+    },
+    {
+      "id": "unit-acad",
+      "name": "Academic Affairs",
+      "code": "AA",
+      "head": "Dean Academics",
+      "contributors": 8,
+      "status": "Active"
+    },
+    {
+      "id": "unit-rd",
+      "name": "Research and Development",
+      "code": "R&D",
+      "head": "Dean Research",
+      "contributors": 5,
+      "status": "Active"
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Dr. Sitaram Soni",
+      "email": "admin@university.edu",
+      "role": "Report Administrator",
+      "unit": "IQAC",
+      "status": "Active"
+    },
+    {
+      "id": "u2",
+      "name": "Dean Student Affairs",
+      "email": "studentaffairs@university.edu",
+      "role": "Section Editor",
+      "unit": "Student Affairs",
+      "status": "Active"
+    },
+    {
+      "id": "u3",
+      "name": "Academic Coordinator",
+      "email": "academics@university.edu",
+      "role": "Unit Contributor",
+      "unit": "Academic Affairs",
+      "status": "Active"
+    },
+    {
+      "id": "u4",
+      "name": "External Reviewer",
+      "email": "reviewer@example.org",
+      "role": "Reviewer",
+      "unit": "External",
+      "status": "Invited"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Super Admin",
+      "permissions": [
+        "all"
+      ]
+    },
+    {
+      "name": "Report Administrator",
+      "permissions": [
+        "cycle.manage",
+        "structure.manage",
+        "user.manage",
+        "publish",
+        "audit.view"
+      ]
+    },
+    {
+      "name": "Section Editor",
+      "permissions": [
+        "structure.view",
+        "heading.edit",
+        "draft.edit",
+        "review.request"
+      ]
+    },
+    {
+      "name": "Unit Contributor",
+      "permissions": [
+        "submission.create",
+        "submission.edit",
+        "document.upload"
+      ]
+    },
+    {
+      "name": "Reviewer",
+      "permissions": [
+        "structure.view",
+        "review.comment",
+        "review.approve"
+      ]
+    },
+    {
+      "name": "Approver",
+      "permissions": [
+        "review.approve",
+        "publish"
+      ]
+    },
+    {
+      "name": "Read-only Viewer",
+      "permissions": [
+        "structure.view",
+        "report.view"
+      ]
+    }
+  ],
+  "versions": [
+    {
+      "id": "v3",
+      "structureId": "st-main",
+      "version": 3,
+      "createdAt": "2026-07-24T06:00:00.000Z",
+      "createdBy": "Dr. Sitaram Soni",
+      "note": "Added research and student support evidence requirements",
+      "headingCount": 17
+    },
+    {
+      "id": "v2",
+      "structureId": "st-main",
+      "version": 2,
+      "createdAt": "2026-07-20T08:30:00.000Z",
+      "createdBy": "IQAC Team",
+      "note": "Reordered governance chapter",
+      "headingCount": 15
+    },
+    {
+      "id": "v1",
+      "structureId": "st-main",
+      "version": 1,
+      "createdAt": "2026-07-15T10:00:00.000Z",
+      "createdBy": "Dr. Sitaram Soni",
+      "note": "Initial hierarchy",
+      "headingCount": 12
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "a-1784884257691-ddv09",
+      "time": "2026-07-24T09:10:57.691Z",
+      "actor": "u1",
+      "action": "Created project",
+      "target": "dfdf",
+      "detail": "Project prj-1784884257688-yawtrs created"
+    },
+    {
+      "id": "a1",
+      "time": "2026-07-24T06:00:00.000Z",
+      "actor": "Dr. Sitaram Soni",
+      "action": "Updated heading",
+      "target": "3.2.1 Student Counselling Services",
+      "detail": "Changed expected evidence and word limit"
+    },
+    {
+      "id": "a2",
+      "time": "2026-07-23T12:10:00.000Z",
+      "actor": "IQAC Team",
+      "action": "Created version",
+      "target": "Structure v3",
+      "detail": "Snapshot created before major revision"
+    },
+    {
+      "id": "a3",
+      "time": "2026-07-22T09:15:00.000Z",
+      "actor": "Dean Student Affairs",
+      "action": "Assigned contributor",
+      "target": "3.2 Student Support",
+      "detail": "Student Affairs added as primary contributing unit"
+    }
+  ],
+  "settings": {
+    "institutionName": "FLAME University",
+    "dateFormat": "DD MMM YYYY",
+    "headingCodeMode": "automatic",
+    "requireValidationBeforePublish": true,
+    "allowContributorSuggestions": true
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "dashboard": {
+    "completion": 63
+  },
+  "headings": [
+    {
+      "id": "1",
+      "title": "Institutional Overview",
+      "level": 1,
+      "status": "Complete",
+      "coverage": 100,
+      "owner": "Registrar",
+      "wordLimit": 1500,
+      "description": "Scope and evidence requirements for Institutional Overview.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 1,
+      "locked": false
+    },
+    {
+      "id": "1.1",
+      "title": "University Profile",
+      "level": 2,
+      "parentId": "1",
+      "status": "Complete",
+      "coverage": 100,
+      "owner": "Registrar",
+      "wordLimit": 1200,
+      "description": "Scope and evidence requirements for University Profile.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 2,
+      "locked": false
+    },
+    {
+      "id": "1.1.1",
+      "title": "Vision and Mission",
+      "level": 3,
+      "parentId": "1.1",
+      "status": "Complete",
+      "coverage": 100,
+      "owner": "Dr. Kavita R.",
+      "wordLimit": 500,
+      "description": "Scope and evidence requirements for Vision and Mission.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 3,
+      "locked": false
+    },
+    {
+      "id": "1.1.2",
+      "title": "Institutional Growth",
+      "level": 3,
+      "parentId": "1.1",
+      "status": "In Progress",
+      "coverage": 72,
+      "owner": "Dr. Kavita R.",
+      "wordLimit": 600,
+      "description": "Scope and evidence requirements for Institutional Growth.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 4,
+      "locked": false
+    },
+    {
+      "id": "2",
+      "title": "Academic Activities",
+      "level": 1,
+      "status": "In Progress",
+      "coverage": 92,
+      "owner": "Dean Academics",
+      "wordLimit": 4000,
+      "description": "Scope and evidence requirements for Academic Activities.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 5,
+      "locked": false
+    },
+    {
+      "id": "3",
+      "title": "Student Support Services",
+      "level": 1,
+      "status": "In Progress",
+      "coverage": 90,
+      "owner": "Dean Student Affairs",
+      "wordLimit": 3500,
+      "description": "Scope and evidence requirements for Student Support Services.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 6,
+      "locked": false
+    },
+    {
+      "id": "3.2.1",
+      "title": "Counselling Services",
+      "level": 3,
+      "parentId": "3",
+      "status": "Complete",
+      "coverage": 100,
+      "owner": "Dean Student Affairs",
+      "wordLimit": 650,
+      "description": "Scope and evidence requirements for Counselling Services.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 7,
+      "locked": false
+    },
+    {
+      "id": "3.2.2",
+      "title": "Peer Support Services",
+      "level": 3,
+      "parentId": "3",
+      "status": "In Progress",
+      "coverage": 84,
+      "owner": "Dean Student Affairs",
+      "wordLimit": 600,
+      "description": "Scope and evidence requirements for Peer Support Services.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 8,
+      "locked": false
+    },
+    {
+      "id": "3.2.3",
+      "title": "Medical Support",
+      "level": 3,
+      "parentId": "3",
+      "status": "In Progress",
+      "coverage": 68,
+      "owner": "Medical Officer",
+      "wordLimit": 700,
+      "description": "Scope and evidence requirements for Medical Support.",
+      "include": [
+        "activities",
+        "verified metrics",
+        "outcomes"
+      ],
+      "exclude": [
+        "unverified promotional claims"
+      ],
+      "evidenceTypes": [
+        "unit report",
+        "verified dataset"
+      ],
+      "expectedMetrics": [
+        "activities completed",
+        "beneficiaries"
+      ],
+      "contributors": [
+        "IQAC"
+      ],
+      "reviewer": "Report Administrator",
+      "order": 9,
+      "locked": false
+    }
+  ],
+  "chunks": [
+    {
+      "id": "CHK-10587",
+      "documentId": "DOC-3024-1001",
+      "preview": "Peer support sessions were conducted across all hostels. Trained peer mentors facilitated discussions on stress management, academic challenges and personal wellbeing.",
+      "tokens": 156,
+      "status": "Approved",
+      "sourceSection": "3.2 Peer Support Sessions",
+      "unit": "Student Affairs",
+      "topics": [
+        "student wellbeing",
+        "peer support",
+        "counselling"
+      ],
+      "metrics": {
+        "participants": 145,
+        "sessions": 6
+      }
+    },
+    {
+      "id": "CHK-10588",
+      "documentId": "DOC-3024-1001",
+      "preview": "Thirty-two peer mentors completed orientation and referral training before taking up supervised mentoring responsibilities.",
+      "tokens": 108,
+      "status": "Approved",
+      "sourceSection": "3.2 Peer Support Sessions",
+      "unit": "Student Affairs",
+      "topics": [
+        "mentor training",
+        "referrals"
+      ],
+      "metrics": {
+        "mentors": 32
+      }
+    },
+    {
+      "id": "CHK-10589",
+      "documentId": "DOC-3024-1001",
+      "preview": "Medical awareness workshops covered preventive health, emergency response and access to the campus medical centre.",
+      "tokens": 142,
+      "status": "Pending",
+      "sourceSection": "3.3 Medical Awareness",
+      "unit": "Student Affairs",
+      "topics": [
+        "medical support",
+        "health awareness"
+      ],
+      "metrics": {
+        "workshops": 8
+      }
+    },
+    {
+      "id": "CHK-10590",
+      "documentId": "DOC-3024-1001",
+      "preview": "A total of 1,245 counselling sessions were delivered through individual and group formats during the reporting period.",
+      "tokens": 198,
+      "status": "Pending",
+      "sourceSection": "3.1 Counselling Services",
+      "unit": "Student Affairs",
+      "topics": [
+        "counselling",
+        "statistics"
+      ],
+      "metrics": {
+        "sessions": 1245
+      }
+    },
+    {
+      "id": "CHK-10591",
+      "documentId": "DOC-3024-1001",
+      "preview": "The annual student wellbeing survey showed improved awareness of support channels and increased confidence in seeking help.",
+      "tokens": 175,
+      "status": "Rejected",
+      "sourceSection": "6. Outcomes",
+      "unit": "Student Affairs",
+      "topics": [
+        "outcomes",
+        "survey"
+      ],
+      "metrics": {
+        "improvement": "12%"
+      }
+    }
+  ],
+  "mappings": {
+    "CHK-10587": [
+      {
+        "headingId": "3.2.2",
+        "headingTitle": "Peer Support Services",
+        "score": 0.93,
+        "assignment": "Primary"
+      },
+      {
+        "headingId": "3.2.1",
+        "headingTitle": "Counselling Services",
+        "score": 0.82,
+        "assignment": "Secondary"
+      },
+      {
+        "headingId": "3.2.3",
+        "headingTitle": "Medical Support",
+        "score": 0.71,
+        "assignment": "Secondary"
+      },
+      {
+        "headingId": "3.3.1",
+        "headingTitle": "Student Engagement Activities",
+        "score": 0.45,
+        "assignment": "Review"
+      },
+      {
+        "headingId": "4.2.1",
+        "headingTitle": "Community Outreach",
+        "score": 0.1,
+        "assignment": "None"
+      }
+    ]
+  }
+}

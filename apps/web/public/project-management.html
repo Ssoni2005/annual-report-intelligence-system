@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARIS Project Management Reference</title>
+  <style>
+    :root{--navy:#17345c;--blue:#245f9e;--pale:#eef4fb;--line:#d8e1ec;--text:#1f2937;--muted:#64748b;--green:#18794e;--amber:#a15c00;--red:#b42318;--white:#fff;--shadow:0 8px 26px rgba(26,54,93,.08)}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f6f8fb;color:var(--text)}
+    header{background:linear-gradient(110deg,var(--navy),var(--blue));color:#fff;padding:26px 32px 22px;position:sticky;top:0;z-index:5;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+    header h1{margin:0 0 6px;font-size:25px;font-weight:650;letter-spacing:.1px} header p{margin:0;color:#dceafa;font-size:13px}
+    .wrap{max-width:1500px;margin:0 auto;padding:24px}.summary{display:grid;grid-template-columns:repeat(5,minmax(145px,1fr));gap:14px;margin-bottom:18px}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)} .metric{padding:17px}.metric .label{color:var(--muted);font-size:12px}.metric .value{font-size:25px;font-weight:700;margin-top:5px}.metric .hint{font-size:11px;color:var(--muted);margin-top:4px}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:13px 15px;margin-bottom:18px}.toolbar input,.toolbar select{border:1px solid #c8d3e0;border-radius:7px;padding:9px 10px;background:#fff;color:var(--text)}.toolbar input{min-width:280px}.toolbar button{border:1px solid #b7c8da;background:#fff;border-radius:7px;padding:9px 12px;cursor:pointer}.toolbar button:hover{background:var(--pale)}
+    .grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(320px,.8fr);gap:18px}.section{padding:18px;margin-bottom:18px}.section h2{font-size:17px;margin:0 0 14px;color:var(--navy)}
+    table{width:100%;border-collapse:collapse;font-size:12.5px}th{text-align:left;color:#4b6079;background:#f1f5f9;border-bottom:1px solid var(--line);padding:10px 9px;position:sticky;top:98px}td{border-bottom:1px solid #e8edf3;padding:10px 9px;vertical-align:top}tr:hover td{background:#fbfdff}
+    .phase{font-weight:650;color:var(--navy)}.status{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-weight:650;font-size:11px;white-space:nowrap}.done{background:#e8f7ef;color:var(--green)}.partial{background:#fff4db;color:var(--amber)}.planned{background:#edf1f5;color:#5d6b7b}.blocked{background:#fdecec;color:var(--red)}.active{background:#e8f1fb;color:#185b96}
+    .progress{height:7px;background:#e8edf3;border-radius:99px;overflow:hidden;min-width:80px;margin-top:4px}.progress span{display:block;height:100%;background:linear-gradient(90deg,#286ba7,#43a0d8)}
+    .list{margin:0;padding-left:18px}.list li{margin:7px 0;line-height:1.35}.small{font-size:12px;color:var(--muted)}.focus{border-left:4px solid #2f75b5;background:#f6faff;padding:13px 15px;border-radius:7px}.risk{padding:11px 12px;border:1px solid var(--line);border-radius:8px;margin:9px 0}.risk strong{display:block;margin-bottom:4px}.timeline{border-left:2px solid #c9d8e8;margin-left:8px;padding-left:18px}.event{position:relative;margin:0 0 17px}.event:before{content:"";position:absolute;left:-24px;top:3px;width:10px;height:10px;background:#2d6da8;border:3px solid #e8f1fb;border-radius:50%}.event h3{font-size:13px;margin:0 0 4px}.event p{font-size:12px;color:var(--muted);margin:0;line-height:1.4}
+    .footer{font-size:11px;color:var(--muted);text-align:center;padding:8px 0 24px}.hidden{display:none}.tag{display:inline-block;padding:2px 6px;border-radius:5px;background:#edf3f9;color:#365671;font-size:10px;margin:1px 3px 1px 0}
+    @media(max-width:980px){.summary{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}th{top:98px}}@media(max-width:620px){header{padding:18px}.wrap{padding:12px}.summary{grid-template-columns:1fr}.toolbar input{min-width:100%;width:100%}.section{padding:12px;overflow:auto}}
+    @media print{header{position:static}.toolbar{display:none}.card{box-shadow:none}.grid{display:block}.section{break-inside:avoid}th{position:static}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>ARIS Project Management Reference</h1>
+  <p>Annual Report Intelligence &amp; Synthesis System · Living status register · Updated 24 July 2026 · Revision v7.1</p>
+</header>
+<div class="wrap">
+  <div class="summary">
+    <div class="card metric"><div class="label">Current release</div><div class="value">v7.1</div><div class="hint">Functional Report Structure + PM reference</div></div>
+    <div class="card metric"><div class="label">Current focus</div><div class="value">Structure</div><div class="hint">Tree authoring and import</div></div>
+    <div class="card metric"><div class="label">Overall readiness</div><div class="value">26%</div><div class="hint">Production readiness, not screen count</div></div>
+    <div class="card metric"><div class="label">Implemented features</div><div class="value">15</div><div class="hint">Functional or partially functional</div></div>
+    <div class="card metric"><div class="label">Open critical risks</div><div class="value">4</div><div class="hint">Build, DB, auth, integration tests</div></div>
+  </div>
+
+  <div class="card toolbar">
+    <input id="search" placeholder="Search phase, feature, tool or note…" />
+    <select id="statusFilter"><option value="all">All statuses</option><option>Active</option><option>Functional</option><option>Partial</option><option>Planned</option><option>Blocked</option></select>
+    <button onclick="window.print()">Print / Save PDF</button>
+    <button onclick="resetFilters()">Reset</button>
+  </div>
+
+  <div class="grid">
+    <main>
+      <section class="card section">
+        <h2>Programme roadmap and feature register</h2>
+        <table id="roadmap"><thead><tr><th>Phase</th><th>Scope / feature</th><th>Status</th><th>Progress</th><th>Primary tools</th><th>Evidence / next action</th></tr></thead><tbody>
+          <tr data-status="Functional"><td class="phase">0. Foundation</td><td>Monorepo, React web, Node API, Python AI service</td><td><span class="status done">Functional</span></td><td>70%<div class="progress"><span style="width:70%"></span></div></td><td><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Express</span><span class="tag">FastAPI</span></td><td>Repository exists; clean Node build still requires external verification.</td></tr>
+          <tr data-status="Partial"><td class="phase">0. Stabilization</td><td>Dependency pinning, atomic JSON writes, health endpoint, static audit</td><td><span class="status partial">Partial</span></td><td>55%<div class="progress"><span style="width:55%"></span></div></td><td><span class="tag">npm</span><span class="tag">pytest</span><span class="tag">static audit</span></td><td>Move persistence to relational database and add complete CI.</td></tr>
+          <tr data-status="Active"><td class="phase">1. Projects</td><td>Multiple projects, multiple structures per project, member-ready model</td><td><span class="status active">Active</span></td><td>55%<div class="progress"><span style="width:55%"></span></div></td><td><span class="tag">Node API</span><span class="tag">JSON repository</span></td><td>Functional development context; production multi-user ownership awaits DB and RBAC.</td></tr>
+          <tr data-status="Functional"><td class="phase">1. Report Structure</td><td>Typed tree authoring, five heading levels, child creation, recursive deletion</td><td><span class="status done">Functional</span></td><td>78%<div class="progress"><span style="width:78%"></span></div></td><td><span class="tag">React</span><span class="tag">Tree model</span><span class="tag">REST</span></td><td>Core tree operations implemented. Next: database persistence and browser acceptance tests.</td></tr>
+          <tr data-status="Functional"><td class="phase">1. Report Structure</td><td>Drag/drop reordering and re-parenting across hierarchy</td><td><span class="status done">Functional</span></td><td>72%<div class="progress"><span style="width:72%"></span></div></td><td><span class="tag">HTML5 DnD</span><span class="tag">Server validation</span></td><td>Cycle and depth validation implemented; keyboard-accessible movement remains.</td></tr>
+          <tr data-status="Functional"><td class="phase">1. Report Structure</td><td>Position-derived numbering independent of stable element ID</td><td><span class="status done">Functional</span></td><td>85%<div class="progress"><span style="width:85%"></span></div></td><td><span class="tag">Derived tree paths</span></td><td>Numbers recalculate after movement; IDs remain stable for future evidence links.</td></tr>
+          <tr data-status="Functional"><td class="phase">1. Report Structure</td><td>Element property panel with read-only parent, children, calculated number and ID</td><td><span class="status done">Functional</span></td><td>75%<div class="progress"><span style="width:75%"></span></div></td><td><span class="tag">React forms</span></td><td>Current governance properties retained; field validation needs expansion.</td></tr>
+          <tr data-status="Partial"><td class="phase">1. Structure Import</td><td>Paste text and detect numbered headings, Markdown headings and lists</td><td><span class="status partial">Partial</span></td><td>65%<div class="progress"><span style="width:65%"></span></div></td><td><span class="tag">Parser rules</span><span class="tag">Preview</span></td><td>Works for common patterns; ambiguous document structures need user-assisted mapping.</td></tr>
+          <tr data-status="Partial"><td class="phase">1. Structure Import</td><td>Drag/drop files: DOCX, PDF, XLSX/XLSM, PPTX, TXT, MD, HTML, CSV, RTF</td><td><span class="status partial">Partial</span></td><td>58%<div class="progress"><span style="width:58%"></span></div></td><td><span class="tag">python-docx</span><span class="tag">pypdf</span><span class="tag">openpyxl</span><span class="tag">python-pptx</span></td><td>Format adapters exist; fidelity for images, text boxes and complex tables needs real corpus testing.</td></tr>
+          <tr data-status="Partial"><td class="phase">1. Versioning</td><td>Structure snapshots and restore points</td><td><span class="status partial">Partial</span></td><td>55%<div class="progress"><span style="width:55%"></span></div></td><td><span class="tag">Snapshots</span><span class="tag">Audit metadata</span></td><td>Snapshots recorded; comparison and conflict handling are planned.</td></tr>
+          <tr data-status="Planned"><td class="phase">1S. Production hardening</td><td>Relational persistence, transactions, optimistic locking and permissions</td><td><span class="status planned">Planned</span></td><td>10%<div class="progress"><span style="width:10%"></span></div></td><td><span class="tag">PostgreSQL</span><span class="tag">Prisma</span><span class="tag">RBAC</span></td><td>Next recommended development cycle.</td></tr>
+          <tr data-status="Partial"><td class="phase">2. Unit Submission</td><td>Submission packages, invitations, completeness and reviewer comments</td><td><span class="status partial">Partial</span></td><td>35%<div class="progress"><span style="width:35%"></span></div></td><td><span class="tag">React</span><span class="tag">Express</span></td><td>Prototype workflow only; frozen until structure module is stable.</td></tr>
+          <tr data-status="Partial"><td class="phase">3. Parsing</td><td>Document extraction, normalized blocks, warnings and entities</td><td><span class="status partial">Partial</span></td><td>38%<div class="progress"><span style="width:38%"></span></div></td><td><span class="tag">FastAPI</span><span class="tag">Office parsers</span></td><td>Core parsing logic exists; operational queue and persistent integration incomplete.</td></tr>
+          <tr data-status="Partial"><td class="phase">4. Chunking</td><td>Hierarchy-aware chunks, split, merge, context and lineage</td><td><span class="status partial">Partial</span></td><td>34%<div class="progress"><span style="width:34%"></span></div></td><td><span class="tag">Python</span><span class="tag">Rule engine</span></td><td>Logic tested in isolation; full end-to-end generation remains incomplete.</td></tr>
+          <tr data-status="Planned"><td class="phase">5. Heading Affinity</td><td>Multi-label mapping of evidence to structure elements</td><td><span class="status planned">Planned</span></td><td>0%<div class="progress"><span style="width:0%"></span></div></td><td><span class="tag">Embeddings</span><span class="tag">Rules</span><span class="tag">LLM review</span></td><td>Blocked by functional document and chunk pipeline.</td></tr>
+          <tr data-status="Planned"><td class="phase">6. Evidence Repository</td><td>Evidence pools, provenance, quality, coverage and conflicts</td><td><span class="status planned">Planned</span></td><td>0%<div class="progress"><span style="width:0%"></span></div></td><td><span class="tag">PostgreSQL</span><span class="tag">pgvector</span></td><td>Not started.</td></tr>
+          <tr data-status="Planned"><td class="phase">7–9. Drafting &amp; Editorial</td><td>Leaf drafting, recursive synthesis, review and governed editor</td><td><span class="status planned">Planned</span></td><td>0%<div class="progress"><span style="width:0%"></span></div></td><td><span class="tag">LLM</span><span class="tag">TipTap</span><span class="tag">Provenance</span></td><td>Not started as functional production workflow.</td></tr>
+          <tr data-status="Planned"><td class="phase">10–12. Publication &amp; Admin</td><td>Export, analytics, administration, access and audit</td><td><span class="status planned">Planned</span></td><td>0%<div class="progress"><span style="width:0%"></span></div></td><td><span class="tag">DOCX</span><span class="tag">PDF</span><span class="tag">RBAC</span></td><td>Not started.</td></tr>
+        </tbody></table>
+      </section>
+
+      <section class="card section">
+        <h2>Release history</h2>
+        <div class="timeline">
+          <div class="event"><h3>v7.2 · 24 Jul 2026 — Project Creation Stabilization</h3><p>Corrected the +Project workflow: reliable form submission, API identity alignment, server validation, visible errors, loading state, direct state refresh and success confirmation.</p></div>
+          <div class="event"><h3>v7.0 · 24 Jul 2026 — Functional Report Structure</h3><p>Introduced project-scoped multiple structures, typed tree elements, five-level headings, position-derived numbering, drag/drop, property panel, paste/file import and structure snapshots.</p></div>
+          <div class="event"><h3>v6.0 · 24 Jul 2026 — Audit and Stabilization Baseline</h3><p>Audited prototype status, pinned dependencies, improved paths and JSON writes, added health disclosure and static audit.</p></div>
+          <div class="event"><h3>v5.0 · Phase 4</h3><p>Added hierarchy-aware chunking prototype, review, split/merge and Python tests.</p></div>
+          <div class="event"><h3>v4.0 · Phase 3</h3><p>Added parsing and normalized-document prototype.</p></div>
+          <div class="event"><h3>v3.0 · Phase 2</h3><p>Added unit submission and document-intake prototype.</p></div>
+          <div class="event"><h3>v2.0 · Phase 1</h3><p>Added initial report structure designer and governance pages.</p></div>
+          <div class="event"><h3>v1.0 · Initial scaffold</h3><p>Created React, Node and Python monorepo with representative screens and seed data.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section class="card section">
+        <h2>Current cycle</h2>
+        <div class="focus"><strong>Structure Production Hardening</strong><div class="small" style="margin-top:6px">Convert the v7 tree module from a development-grade persistent implementation into a concurrent, permission-secured, fully tested module.</div></div>
+        <ul class="list small">
+          <li>Verify clean Node/React build.</li><li>Replace structure JSON repository with database tables and migrations.</li><li>Add authenticated project membership and backend authorization.</li><li>Add optimistic locking for concurrent editing.</li><li>Add Playwright tests for create, move, import, restore and reload.</li>
+        </ul>
+      </section>
+      <section class="card section"><h2>Critical risks</h2>
+        <div class="risk"><strong>Build not independently verified</strong><span class="small">Node dependency installation timed out in the build environment.</span></div>
+        <div class="risk"><strong>JSON persistence</strong><span class="small">Atomic writes reduce corruption but do not support safe concurrent users.</span></div>
+        <div class="risk"><strong>Authentication and RBAC</strong><span class="small">Current development identity is not a production security boundary.</span></div>
+        <div class="risk"><strong>Import fidelity</strong><span class="small">Complex layouts, floating text boxes, embedded images and merged tables need representative corpus testing.</span></div>
+      </section>
+      <section class="card section"><h2>Definition of done</h2><ul class="list small"><li>User action works in the interface.</li><li>API validates and performs the operation.</li><li>Database persists it after restart.</li><li>Permissions are enforced server-side.</li><li>Errors are actionable and recoverable.</li><li>Audit event is recorded.</li><li>Automated tests cover success and failure.</li><li>No mock, fake progress or placeholder behavior.</li></ul></section>
+      <section class="card section"><h2>Update protocol</h2><p class="small">Every development response that changes the application must also update this file's:</p><ul class="list small"><li>revision number and date;</li><li>feature status and progress;</li><li>release-history entry;</li><li>current cycle and next action;</li><li>risks and test evidence.</li></ul><p class="small"><strong>Canonical file:</strong><br><code>apps/web/public/project-management.html</code></p></section>
+    </aside>
+  </div>
+  <div class="footer">ARIS living project reference · Status values reflect verified implementation maturity, not the existence of UI screens.</div>
+</div>
+<script>
+  const search=document.getElementById('search'); const filter=document.getElementById('statusFilter');
+  function apply(){const q=search.value.toLowerCase().trim();const f=filter.value;document.querySelectorAll('#roadmap tbody tr').forEach(r=>{const okQ=!q||r.innerText.toLowerCase().includes(q);const okF=f==='all'||r.dataset.status===f;r.classList.toggle('hidden',!(okQ&&okF));});}
+  search.addEventListener('input',apply);filter.addEventListener('change',apply);function resetFilters(){search.value='';filter.value='all';apply();}
+</script>
+</body>
+</html>

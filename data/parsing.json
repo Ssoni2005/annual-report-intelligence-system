@@ -1,0 +1,87 @@
+{
+  "jobs": [
+    {
+      "id": "job-parse-001",
+      "documentId": "doc-001",
+      "documentTitle": "Student Affairs Annual Activity Report",
+      "unit": "Student Affairs",
+      "fileName": "student-affairs-report.docx",
+      "status": "Completed",
+      "progress": 100,
+      "stage": "normalised",
+      "createdAt": "2026-07-22T09:30:00.000Z",
+      "startedAt": "2026-07-22T09:30:10.000Z",
+      "completedAt": "2026-07-22T09:31:04.000Z",
+      "parser": "DOCX structural parser",
+      "warnings": 1,
+      "error": null
+    },
+    {
+      "id": "job-parse-002",
+      "documentId": "doc-002",
+      "documentTitle": "Research Output Workbook",
+      "unit": "Research Office",
+      "fileName": "research-output.xlsx",
+      "status": "Processing",
+      "progress": 68,
+      "stage": "extracting tables",
+      "createdAt": "2026-07-24T06:40:00.000Z",
+      "startedAt": "2026-07-24T06:40:05.000Z",
+      "completedAt": null,
+      "parser": "Spreadsheet parser",
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "id": "job-parse-003",
+      "documentId": "doc-003",
+      "documentTitle": "Community Outreach Report",
+      "unit": "Community Engagement",
+      "fileName": "outreach-report.pdf",
+      "status": "Failed",
+      "progress": 34,
+      "stage": "reading pages",
+      "createdAt": "2026-07-23T14:20:00.000Z",
+      "startedAt": "2026-07-23T14:20:08.000Z",
+      "completedAt": null,
+      "parser": "PDF text parser",
+      "warnings": 2,
+      "error": "Pages 8–10 contain image-only content. OCR is required."
+    }
+  ],
+  "normalizedDocuments": [
+    {
+      "id": "norm-001",
+      "documentId": "doc-001",
+      "title": "Student Affairs Annual Activity Report",
+      "unit": "Student Affairs",
+      "reportingPeriod": "2025–26",
+      "language": "English",
+      "pageCount": 18,
+      "wordCount": 4386,
+      "parserVersion": "3.0.0",
+      "status": "Ready for Chunking",
+      "quality": 94,
+      "createdAt": "2026-07-22T09:31:04.000Z",
+      "warnings": ["One uncaptioned table on page 11"],
+      "entities": {
+        "dates": ["12 August 2025", "16 August 2025", "5 January 2026"],
+        "units": ["Student Affairs", "Counselling Centre", "Residence Life"],
+        "people": ["Dean of Student Affairs", "Chief Resident Counsellor"],
+        "locations": ["University Campus", "Student Activity Centre"],
+        "metrics": ["460 students", "18 sessions", "92% satisfaction"]
+      },
+      "blocks": [
+        {"id":"blk-001","type":"heading","level":1,"text":"Student Affairs Annual Activity Report 2025–26","page":1,"order":1,"confidence":0.99},
+        {"id":"blk-002","type":"heading","level":2,"text":"1. Student Wellbeing and Support","page":3,"order":2,"confidence":0.98},
+        {"id":"blk-003","type":"paragraph","text":"The Student Affairs Unit expanded integrated academic, emotional, medical and residential support during the reporting year.","page":3,"order":3,"confidence":0.97},
+        {"id":"blk-004","type":"heading","level":3,"text":"1.1 Student Wellbeing Week","page":4,"order":4,"confidence":0.98},
+        {"id":"blk-005","type":"paragraph","text":"Student Wellbeing Week was conducted from 12 to 16 August 2025. It brought together counselling orientation, peer-support sessions, medical awareness workshops and residential mentor meetings.","page":4,"order":5,"confidence":0.96},
+        {"id":"blk-006","type":"list","items":["18 facilitated sessions","460 participating students","Peer-support referrals increased after the programme"],"page":5,"order":6,"confidence":0.95},
+        {"id":"blk-007","type":"table","caption":"Participation by activity","columns":["Activity","Sessions","Participants"],"rows":[["Counselling orientation","4","180"],["Peer support","6","120"],["Medical awareness","3","95"],["Residential mentoring","5","65"]],"page":6,"order":7,"confidence":0.93},
+        {"id":"blk-008","type":"heading","level":3,"text":"1.2 Counselling Services","page":7,"order":8,"confidence":0.99},
+        {"id":"blk-009","type":"paragraph","text":"Counselling access was strengthened through appointment triage, emergency referral protocols and scheduled open sessions. Student satisfaction with access and confidentiality was 92 percent.","page":7,"order":9,"confidence":0.97}
+      ]
+    }
+  ]
+}

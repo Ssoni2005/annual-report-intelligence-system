@@ -1,0 +1,219 @@
+{
+  "submissionPackages": [
+    {
+      "id": "sub-001",
+      "cycleId": "cy-2025",
+      "unitId": "unit-sa",
+      "unit": "Student Affairs",
+      "coordinator": "Ananya Rao",
+      "email": "ananya.rao@university.edu",
+      "deadline": "2026-05-10",
+      "status": "Submitted",
+      "completeness": 92,
+      "reviewer": "Section Editor",
+      "submittedAt": "2026-05-09T13:40:00Z",
+      "documents": 3,
+      "requiredItems": 6,
+      "receivedItems": 5,
+      "comments": 2
+    },
+    {
+      "id": "sub-002",
+      "cycleId": "cy-2025",
+      "unitId": "unit-aa",
+      "unit": "Academic Affairs",
+      "coordinator": "Rohit Menon",
+      "email": "rohit.menon@university.edu",
+      "deadline": "2026-05-10",
+      "status": "Submitted",
+      "completeness": 100,
+      "reviewer": "Academic Reviewer",
+      "submittedAt": "2026-05-10T09:15:00Z",
+      "documents": 4,
+      "requiredItems": 6,
+      "receivedItems": 6,
+      "comments": 0
+    },
+    {
+      "id": "sub-003",
+      "cycleId": "cy-2025",
+      "unitId": "unit-fin",
+      "unit": "Finance Department",
+      "coordinator": "Meera Shah",
+      "email": "meera.shah@university.edu",
+      "deadline": "2026-05-12",
+      "status": "In Progress",
+      "completeness": 58,
+      "reviewer": "Finance Reviewer",
+      "submittedAt": null,
+      "documents": 2,
+      "requiredItems": 7,
+      "receivedItems": 4,
+      "comments": 1
+    },
+    {
+      "id": "sub-004",
+      "cycleId": "cy-2025",
+      "unitId": "unit-iqac",
+      "unit": "IQAC",
+      "coordinator": "Quality Office",
+      "email": "iqac@university.edu",
+      "deadline": "2026-05-08",
+      "status": "Overdue",
+      "completeness": 16,
+      "reviewer": "Report Administrator",
+      "submittedAt": null,
+      "documents": 1,
+      "requiredItems": 6,
+      "receivedItems": 1,
+      "comments": 3
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-001",
+      "submissionId": "sub-001",
+      "title": "Annual Activity Report 2025\u201326",
+      "unit": "Student Affairs",
+      "type": "Activity Report",
+      "reportingPeriod": "2025\u201326",
+      "confidentiality": "Internal",
+      "status": "Validated",
+      "pages": 45,
+      "sizeBytes": 1843200,
+      "fileName": "student-affairs-annual-report.docx",
+      "uploadedAt": "2026-05-09T13:11:00Z",
+      "uploadedBy": "Ananya Rao",
+      "validation": {
+        "complete": true,
+        "issues": []
+      },
+      "metadata": {
+        "activityDates": "2025-07-01 to 2026-04-30",
+        "responsibleOfficer": "Dean, Student Affairs",
+        "targetGroup": "Students"
+      }
+    },
+    {
+      "id": "doc-002",
+      "submissionId": "sub-001",
+      "title": "Counselling Services Report",
+      "unit": "Student Affairs",
+      "type": "Service Report",
+      "reportingPeriod": "2025\u201326",
+      "confidentiality": "Restricted",
+      "status": "Parsed",
+      "pages": 12,
+      "sizeBytes": 630200,
+      "fileName": "counselling-services.pdf",
+      "uploadedAt": "2026-05-09T13:18:00Z",
+      "uploadedBy": "Ananya Rao",
+      "validation": {
+        "complete": false,
+        "issues": [
+          "Outcome metric not supplied"
+        ]
+      },
+      "metadata": {
+        "activityDates": "2025-07-01 to 2026-04-30",
+        "responsibleOfficer": "Head, Counselling Centre",
+        "targetGroup": "Students"
+      }
+    },
+    {
+      "id": "doc-003",
+      "submissionId": "sub-002",
+      "title": "Programme and Curriculum Summary",
+      "unit": "Academic Affairs",
+      "type": "Academic Report",
+      "reportingPeriod": "2025\u201326",
+      "confidentiality": "Internal",
+      "status": "Uploaded",
+      "pages": 28,
+      "sizeBytes": 930000,
+      "fileName": "academic-summary.xlsx",
+      "uploadedAt": "2026-05-10T09:00:00Z",
+      "uploadedBy": "Rohit Menon",
+      "validation": {
+        "complete": false,
+        "issues": [
+          "Awaiting validation"
+        ]
+      },
+      "metadata": {
+        "activityDates": "2025-07-01 to 2026-04-30",
+        "responsibleOfficer": "Dean, Academic Affairs",
+        "targetGroup": "Students and Faculty"
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "id": "req-1",
+      "name": "Unit narrative report",
+      "mandatory": true,
+      "acceptedTypes": [
+        "Activity Report",
+        "Academic Report",
+        "Service Report"
+      ]
+    },
+    {
+      "id": "req-2",
+      "name": "Verified KPI workbook",
+      "mandatory": true,
+      "acceptedTypes": [
+        "Data Workbook"
+      ]
+    },
+    {
+      "id": "req-3",
+      "name": "Major events and achievements",
+      "mandatory": true,
+      "acceptedTypes": [
+        "Event Report",
+        "Achievement Register"
+      ]
+    },
+    {
+      "id": "req-4",
+      "name": "Photographs and captions",
+      "mandatory": false,
+      "acceptedTypes": [
+        "Image Collection"
+      ]
+    },
+    {
+      "id": "req-5",
+      "name": "Future priorities",
+      "mandatory": true,
+      "acceptedTypes": [
+        "Narrative Note"
+      ]
+    },
+    {
+      "id": "req-6",
+      "name": "Unit head declaration",
+      "mandatory": true,
+      "acceptedTypes": [
+        "Declaration"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "c-1",
+      "submissionId": "sub-001",
+      "author": "Section Editor",
+      "message": "Please add the verified beneficiary total for counselling services.",
+      "createdAt": "2026-05-10T08:30:00Z"
+    },
+    {
+      "id": "c-2",
+      "submissionId": "sub-001",
+      "author": "Ananya Rao",
+      "message": "The verified register will be uploaded today.",
+      "createdAt": "2026-05-10T09:05:00Z"
+    }
+  ]
+}

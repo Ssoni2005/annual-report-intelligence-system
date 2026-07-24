@@ -1,0 +1,1 @@
+import{describe,it,expect}from'vitest';import{readStore}from'./store.js';describe('demo store',()=>{it('has headings and chunks',()=>{const s=readStore();expect(s.headings.length).toBeGreaterThan(0);expect(s.chunks.length).toBeGreaterThan(0)})});

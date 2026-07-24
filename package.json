@@ -1,0 +1,27 @@
+{
+  "name": "annual-report-intelligence-system",
+  "private": true,
+  "version": "5.0.1-project-modal-stabilized",
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:web\" \"npm:dev:api\" \"npm:dev:ai\"",
+    "dev:web": "npm run dev -w @aris/web",
+    "dev:api": "npm run dev -w @aris/api",
+    "dev:ai": "python3 -m uvicorn services.ai.app.main:app --reload --port 8001",
+    "build": "npm run build -w @aris/web && npm run build -w @aris/api",
+    "test": "npm run test -w @aris/web && npm run test -w @aris/api && python3 -m pytest services/ai/tests",
+    "test:python": "python3 -m pytest services/ai/tests",
+    "audit:static": "python3 scripts/static_audit.py",
+    "seed": "npm run seed -w @aris/api"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.2"
+  },
+  "engines": {
+    "node": ">=20 <23",
+    "npm": ">=10"
+  }
+}
