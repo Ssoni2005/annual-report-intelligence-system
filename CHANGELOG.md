@@ -1,3 +1,8 @@
+## v7.9.1 — Drag Inspector Hotfix
+
+- Restored the missing `Inspector` component used by the persistent right panel.
+- Fixed `ReferenceError: Inspector is not defined` triggered during structure-tree drag interaction.
+
 # v7.8 — Governed Caption Elements
 
 - Added Table Caption, Image Caption, and Text Box Caption elements.
