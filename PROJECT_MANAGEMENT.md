@@ -42,3 +42,19 @@ Status values represent verified functional maturity, not screen availability.
 - [x] ADR and changelog
 - [ ] Run npm install/npm run build in connected local environment
 - [ ] Browser interaction test
+
+## Release v7.4 — Governed Dialog Framework
+
+**Status:** Implemented; local dependency-backed build verification required.
+
+### Completed
+- Reusable `ConfirmDialog` component.
+- Custom deletion confirmation for Project, Report, Structure, Structure Element, and Source Document.
+- Keyboard and accessibility behavior: Escape, focus, ARIA alert-dialog semantics.
+- Busy state prevents duplicate destructive requests.
+- Browser-native `alert`, `confirm`, and `prompt` usage removed from the web source.
+
+### Verification
+- Static browser-dialog scan: passed.
+- ZIP integrity: pending packaging step.
+- TypeScript/Vite build: requires `npm install` in the clean package; the packaging environment did not contain installed workspace dependencies.

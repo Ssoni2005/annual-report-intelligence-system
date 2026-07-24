@@ -1,6 +1,14 @@
-import React from 'react';
+import React,{useEffect,useRef} from 'react';
+import{AlertTriangle,X}from'lucide-react';
 export const Card=({children,className=''}:{children:React.ReactNode,className?:string})=><div className={'card '+className}>{children}</div>;
 export const Badge=({children,tone='blue'}:{children:React.ReactNode,tone?:string})=><span className={'badge '+tone}>{children}</span>;
 export const Button=({children,variant='primary',onClick,disabled=false,type='button'}:{children:React.ReactNode;variant?:string;onClick?:()=>void;disabled?:boolean;type?:'button'|'submit'})=><button type={type} disabled={disabled} className={'btn '+variant} onClick={onClick}>{children}</button>;
-export const Modal=({title,children,onClose,width='680px'}:{title:string;children:React.ReactNode;onClose:()=>void;width?:string})=><div className="overlay" onMouseDown={e=>{if(e.target===e.currentTarget)onClose()}}><div className="modal" style={{width:`min(${width},95vw)`}}><div className="modalHead"><h3>{title}</h3><button onClick={onClose}>×</button></div>{children}</div></div>;
+export const Modal=({title,children,onClose,width='680px'}:{title:string;children:React.ReactNode;onClose:()=>void;width?:string})=><div className="overlay" onMouseDown={e=>{if(e.target===e.currentTarget)onClose()}}><div className="modal" role="dialog" aria-modal="true" aria-label={title} style={{width:`min(${width},95vw)`}}><div className="modalHead"><h3>{title}</h3><button aria-label="Close dialog" onClick={onClose}>×</button></div>{children}</div></div>;
+export type ConfirmDialogProps={open:boolean;title:string;message:React.ReactNode;confirmLabel?:string;cancelLabel?:string;busy?:boolean;onConfirm:()=>void|Promise<void>;onCancel:()=>void;details?:React.ReactNode};
+export function ConfirmDialog({open,title,message,confirmLabel='Delete',cancelLabel='Cancel',busy=false,onConfirm,onCancel,details}:ConfirmDialogProps){
+ const confirmRef=useRef<HTMLButtonElement>(null);
+ useEffect(()=>{if(!open)return;confirmRef.current?.focus();const onKey=(event:KeyboardEvent)=>{if(event.key==='Escape'&&!busy)onCancel()};document.addEventListener('keydown',onKey);return()=>document.removeEventListener('keydown',onKey)},[open,busy,onCancel]);
+ if(!open)return null;
+ return <div className="overlay confirmOverlay" onMouseDown={e=>{if(e.target===e.currentTarget&&!busy)onCancel()}}><section className="confirmDialog" role="alertdialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-message"><button className="confirmClose" aria-label="Close confirmation" disabled={busy} onClick={onCancel}><X size={18}/></button><div className="confirmIcon"><AlertTriangle size={24}/></div><div className="confirmContent"><h3 id="confirm-title">{title}</h3><div id="confirm-message" className="confirmMessage">{message}</div>{details&&<div className="confirmDetails">{details}</div>}</div><div className="confirmActions"><Button variant="secondary" onClick={onCancel} disabled={busy}>{cancelLabel}</Button><button ref={confirmRef} type="button" className="btn danger" disabled={busy} onClick={onConfirm}>{busy?'Deleting…':confirmLabel}</button></div></section></div>
+}
 export const EmptyState=({title,detail}:{title:string;detail:string})=><div className="emptyState"><b>{title}</b><p>{detail}</p></div>;

@@ -1,7 +1,7 @@
 {
   "name": "annual-report-intelligence-system",
   "private": true,
-  "version": "5.1.0-project-report-structure-menus",
+  "version": "5.2.0-dialog-framework",
   "workspaces": [
     "apps/web",
     "apps/api"

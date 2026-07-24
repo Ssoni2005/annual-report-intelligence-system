@@ -9,3 +9,12 @@
 - Added JSON export and guarded deletion workflows.
 - Added sample reports and updated project data.
 
+
+## v7.4.0 — Governed Dialog Framework
+
+- Replaced browser-native `confirm()` deletion prompts with a reusable in-application confirmation dialog.
+- Added contextual delete wording for projects, reports, structures, structure elements, and source documents.
+- Added destructive-action loading states to prevent duplicate requests.
+- Added Escape-key handling, backdrop cancellation, initial focus, ARIA alert-dialog semantics, and keyboard-visible focus states.
+- Added a governed danger-button style consistent with the institutional interface.
+- Verified through static search that `alert()`, `confirm()`, and `prompt()` are no longer used in the web source.
