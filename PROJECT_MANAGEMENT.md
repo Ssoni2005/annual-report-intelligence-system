@@ -70,3 +70,10 @@ Status values represent verified functional maturity, not screen availability.
 - Inline full-content reading
 - Collapsible one-line paragraph previews
 - Governed confirmation retained for destructive actions
+
+
+## v7.6 — Document hierarchy numbering
+- Status: Implemented, pending local build verification
+- Title and Chapter: unnumbered order-0 document objects
+- Heading 1: starts at 1
+- Lower headings: derived hierarchical numbering

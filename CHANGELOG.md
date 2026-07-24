@@ -1,3 +1,11 @@
+# v7.6.0 — Document hierarchy numbering correction
+
+- Title and Chapter are treated as unnumbered order-0 document objects.
+- Heading 1 now begins at 1 rather than 1.1.
+- Heading 2–5 derive numbering only from numbered heading ancestors.
+- Numbering restarts within each unnumbered Title or Chapter container.
+- Chapter elements may be organised beneath a Title without displaying a number.
+
 # Changelog
 
 ## v7.5 — Structure Tree Interaction Studio

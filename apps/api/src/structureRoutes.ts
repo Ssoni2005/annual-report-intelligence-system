@@ -7,15 +7,16 @@ const upload=multer({storage:multer.memoryStorage(),limits:{fileSize:25*1024*102
 const now=()=>new Date().toISOString();
 const uid=(p:string)=>`${p}-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
 const actor=(req:any)=>String(req.header('x-user-id')||req.header('x-actor')||'u1');
-const headingTypes=new Set(['chapter','heading1','heading2','heading3','heading4','heading5']);
-const depthOf=(type:string)=>type==='chapter'?0:type.startsWith('heading')?Number(type.slice(7)):null;
+const headingTypes=new Set(['title','chapter','heading1','heading2','heading3','heading4','heading5']);
+const documentObjectTypes=new Set(['title','chapter']);
+const depthOf=(type:string)=>documentObjectTypes.has(type)?0:type.startsWith('heading')?Number(type.slice(7)):null;
 
 function validateTree(data:any, structureId:string){
  const els=data.elements.filter((e:any)=>e.structureId===structureId); const byId=new Map(els.map((e:any)=>[e.id,e])); const errors:any[]=[];
  for(const e of els){
   if(e.parentId&&!byId.has(e.parentId))errors.push({id:e.id,message:'Parent element does not exist'});
   const d=depthOf(e.type); if(d!==null&&d>5)errors.push({id:e.id,message:'Heading hierarchy exceeds five levels'});
-  if(e.parentId){const p:any=byId.get(e.parentId); const pd=depthOf(p?.type); if(d!==null&&pd!==null&&d!==pd+1)errors.push({id:e.id,message:`${e.type} must sit directly below the preceding heading level`});}
+  if(e.parentId){const p:any=byId.get(e.parentId); const pd=depthOf(p?.type); const bothDocumentObjects=d===0&&pd===0&&documentObjectTypes.has(e.type)&&documentObjectTypes.has(p?.type); if(d!==null&&pd!==null&&!bothDocumentObjects&&d!==pd+1)errors.push({id:e.id,message:`${e.type} must sit directly below the preceding heading level`});}
  }
  return errors;
 }
