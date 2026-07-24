@@ -12,17 +12,38 @@ const documentObjectTypes=new Set(['title','chapter']);
 const captionParentType:Record<string,string>={tableCaption:'table',imageCaption:'image',textBoxCaption:'textBox'};
 const captionTypes=new Set(Object.keys(captionParentType));
 const depthOf=(type:string)=>documentObjectTypes.has(type)?0:type.startsWith('heading')?Number(type.slice(7)):null;
+const numberedHeadingType=(type:string)=>/^heading[1-5]$/.test(type);
 
 function validateTree(data:any, structureId:string){
  const els=data.elements.filter((e:any)=>e.structureId===structureId); const byId=new Map(els.map((e:any)=>[e.id,e])); const errors:any[]=[];
  for(const e of els){
   if(e.parentId&&!byId.has(e.parentId))errors.push({id:e.id,message:'Parent element does not exist'});
   const d=depthOf(e.type); if(d!==null&&d>5)errors.push({id:e.id,message:'Heading hierarchy exceeds five levels'});
-  if(e.parentId){const p:any=byId.get(e.parentId); const pd=depthOf(p?.type); const bothDocumentObjects=d===0&&pd===0&&documentObjectTypes.has(e.type)&&documentObjectTypes.has(p?.type); if(d!==null&&pd!==null&&!bothDocumentObjects&&d!==pd+1)errors.push({id:e.id,message:`${e.type} must sit directly below the preceding heading level`});}
+  const parent:any=e.parentId?byId.get(e.parentId):null;
+  const pd=parent?depthOf(parent.type):null;
+
+  // Word-style outline logic: only headings participate in heading-level hierarchy.
+  // H1 may be at root or beneath an unnumbered Title/Chapter. H2-H5 must be
+  // direct children of the immediately preceding heading level.
+  if(numberedHeadingType(e.type)){
+   if(d===1){
+    if(parent&&!documentObjectTypes.has(parent.type))errors.push({id:e.id,message:'Heading 1 may only be placed at document root or under a Title/Chapter'});
+   }else if(!parent||pd!==d-1){
+    errors.push({id:e.id,message:`Heading ${d} must be a direct child of Heading ${d-1}`});
+   }
+  }else if(documentObjectTypes.has(e.type)){
+   if(e.type==='title'&&parent)errors.push({id:e.id,message:'Title is a root-level document object'});
+   if(e.type==='chapter'&&parent&&parent.type!=='title')errors.push({id:e.id,message:'Chapter may only be at root or directly under a Title'});
+  }else if(!captionTypes.has(e.type)){
+   // Paragraphs, lists, tables, images and text boxes are free content elements.
+   // They may sit at root or directly beneath any Title, Chapter or Heading.
+   if(parent&&!headingTypes.has(parent.type))errors.push({id:e.id,message:'Content elements may only be placed at root or as children of a Title, Chapter or Heading'});
+  }
+
   if(captionTypes.has(e.type)){
-   const parentElementId=e.properties?.parentElementId; const parent:any=byId.get(parentElementId);
-   if(!parent||parent.type!==captionParentType[e.type])errors.push({id:e.id,message:`${e.type} must be attached to its matching parent element`});
-   if(parent&&(e.parentId||null)!==(parent.parentId||null))errors.push({id:e.id,message:'Caption must remain at the same tree level as its parent element'});
+   const parentElementId=e.properties?.parentElementId; const parentElement:any=byId.get(parentElementId);
+   if(!parentElement||parentElement.type!==captionParentType[e.type])errors.push({id:e.id,message:`${e.type} must be attached to its matching parent element`});
+   if(parentElement&&(e.parentId||null)!==(parentElement.parentId||null))errors.push({id:e.id,message:'Caption must remain at the same tree level as its parent element'});
    if(els.some((x:any)=>x.id!==e.id&&x.type===e.type&&x.properties?.parentElementId===parentElementId))errors.push({id:e.id,message:'Only one caption is allowed for this element'});
   }
  }

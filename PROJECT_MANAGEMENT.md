@@ -84,3 +84,10 @@ Status values represent verified functional maturity, not screen availability.
 Status: Implemented; local build verification required.
 
 Table Caption, Image Caption, and Text Box Caption are governed one-to-one elements fixed immediately after their respective parent elements.
+
+
+## v7.9.2 — Structure hierarchy correction
+
+Status: implemented; local runtime verification required.
+
+The structure tree now follows a Word-style outline model: heading levels govern only other headings, while paragraphs, lists, tables, images, and text boxes are free content children of any document object or heading. Drag guidance previews valid placement and explains invalid heading-level drops.

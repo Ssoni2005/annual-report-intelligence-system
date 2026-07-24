@@ -44,7 +44,7 @@
 .betweenAdd:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-soft)}
 .emptyChildAdd{border:1px dashed var(--border);background:transparent;color:var(--muted);padding:6px 9px;border-radius:5px;display:flex;align-items:center;gap:5px;cursor:pointer;width:max-content}
 .emptyChildAdd:hover{border-color:var(--primary);color:var(--primary)}
-.elementContextMenu{position:fixed;z-index:120;width:250px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 16px 45px rgba(15,35,58,.22);padding:6px}
+.elementContextMenu{position:fixed;z-index:10000;width:250px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 16px 45px rgba(15,35,58,.22);padding:6px}
 .elementContextMenu .contextTitle{font-size:12px;font-weight:700;padding:8px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px solid var(--border);margin-bottom:4px}
 .elementContextMenu button{width:100%;border:0;background:transparent;padding:8px 9px;border-radius:5px;text-align:left;display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer}
 .elementContextMenu button:hover{background:var(--primary-soft)}
@@ -67,3 +67,7 @@
 .dropInsideHint{font-size:10px;color:var(--primary);font-weight:700;margin-top:3px}
 .structureNode[draggable="true"] .lucide-grip-vertical{cursor:grab}
 .structureNode[draggable="true"]:active .lucide-grip-vertical{cursor:grabbing}
+/* v7.9.2 — Word-style outline hierarchy and governed drag feedback */
+.structureNode.dropInvalid,.rootDrop.dropInvalid{outline:2px solid var(--danger);outline-offset:1px;background:color-mix(in srgb,var(--danger) 8%,var(--surface))}
+.dropInvalidHint{margin-top:5px;padding:4px 7px;border:1px solid color-mix(in srgb,var(--danger) 45%,transparent);border-radius:5px;background:color-mix(in srgb,var(--danger) 10%,var(--surface));color:var(--danger);font-size:10px;font-weight:700;line-height:1.3}
+.treeElement.invalidTarget>.structureNode{cursor:not-allowed}

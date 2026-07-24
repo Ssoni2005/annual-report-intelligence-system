@@ -41,10 +41,10 @@
       "name": "Main Annual Report Structure",
       "description": "Primary report structure",
       "status": "Draft",
-      "version": 14,
+      "version": 29,
       "createdBy": "u1",
       "createdAt": "2026-07-24T00:00:00Z",
-      "updatedAt": "2026-07-24T18:14:45.864Z"
+      "updatedAt": "2026-07-24T18:49:35.539Z"
     },
     {
       "id": "str-summary",
@@ -76,7 +76,7 @@
       "type": "chapter",
       "title": "Institutional Overview",
       "content": "",
-      "order": 1,
+      "order": 2,
       "properties": {
         "owner": "Report Administrator",
         "reviewer": "Quality Reviewer",
@@ -112,7 +112,7 @@
     {
       "id": "el-p1",
       "structureId": "str-main",
-      "parentId": "el-1",
+      "parentId": null,
       "type": "paragraph",
       "title": "Purpose note",
       "content": "Explain major developments against the institutional vision and mission.",
@@ -126,7 +126,7 @@
       "type": "chapter",
       "title": "Academic Development",
       "content": "",
-      "order": 2,
+      "order": 3,
       "properties": {
         "owner": "Report Administrator",
         "reviewer": "Quality Reviewer",
@@ -178,15 +178,2665 @@
         "expectedMetrics": [],
         "contributors": []
       }
+    },
+    {
+      "id": "el-1784918923675-kwzs0g",
+      "structureId": "str-main",
+      "parentId": "el-1-1",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 1,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918926505-ocntmq",
+      "structureId": "str-main",
+      "parentId": "el-1784884334145-73cuhz",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 0,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918927067-o9n9y9",
+      "structureId": "str-main",
+      "parentId": "el-2",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 0,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918961924-2snz9c",
+      "structureId": "str-main",
+      "parentId": "el-1784884330724-js3wgu",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 2,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918965910-ip7xrv",
+      "structureId": "str-main",
+      "parentId": "el-1784884330724-js3wgu",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 4,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918967817-bjcvdr",
+      "structureId": "str-main",
+      "parentId": "el-1784884330724-js3wgu",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 3,
+      "properties": {}
+    },
+    {
+      "id": "el-1784918975521-o232q4",
+      "structureId": "str-main",
+      "parentId": "el-1784884330724-js3wgu",
+      "type": "paragraph",
+      "title": "",
+      "content": "",
+      "order": 1,
+      "properties": {}
     }
   ],
   "versions": [
     {
-      "id": "ver-1784916885864-a4ow02",
+      "id": "ver-1784918975539-l8dfot",
+      "structureId": "str-main",
+      "version": 29,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:35.539Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 4,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918967817-bjcvdr",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 3,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918975521-o232q4",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918975522-ua1v4s",
+      "structureId": "str-main",
+      "version": 28,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:49:35.522Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 3,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918967817-bjcvdr",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918975521-o232q4",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 4,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918967832-mqcf25",
+      "structureId": "str-main",
+      "version": 27,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:27.832Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 3,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918967817-bjcvdr",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918967817-qmjla4",
+      "structureId": "str-main",
+      "version": 26,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:49:27.817Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918967817-bjcvdr",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 3,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918965925-bbsu9s",
+      "structureId": "str-main",
+      "version": 25,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:25.925Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918965910-7s59yo",
+      "structureId": "str-main",
+      "version": 24,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:49:25.910Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918965910-ip7xrv",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918961939-vk5irr",
+      "structureId": "str-main",
+      "version": 23,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:21.939Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918961925-xilmvk",
+      "structureId": "str-main",
+      "version": 22,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:49:21.925Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918961924-2snz9c",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918952207-7wktx3",
+      "structureId": "str-main",
+      "version": 21,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:12.207Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918945249-qaci9e",
+      "structureId": "str-main",
+      "version": 20,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:49:05.249Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-1784884334145-73cuhz",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918932520-7etu23",
+      "structureId": "str-main",
+      "version": 19,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:48:52.520Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918927082-9kqsgu",
+      "structureId": "str-main",
+      "version": 18,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:48:47.082Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918927067-bk2m0h",
+      "structureId": "str-main",
+      "version": 17,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:48:47.067Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918927067-o9n9y9",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 2,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918926519-uo3mm3",
+      "structureId": "str-main",
+      "version": 16,
+      "note": "Reordered report structure",
+      "createdAt": "2026-07-24T18:48:46.519Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918926505-vidgwe",
+      "structureId": "str-main",
+      "version": 15,
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:48:46.505Z",
+      "createdBy": "u1",
+      "elements": [
+        {
+          "id": "el-title",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "title",
+          "title": "Annual Report 2025–26",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Institutional Overview",
+          "content": "",
+          "order": 2,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 1200,
+            "description": "Overview of institutional identity, strategy and progress",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1-1",
+          "structureId": "str-main",
+          "parentId": "el-1",
+          "type": "heading1",
+          "title": "Vision, Mission and Values",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-p1",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "paragraph",
+          "title": "Purpose note",
+          "content": "Explain major developments against the institutional vision and mission.",
+          "order": 1,
+          "properties": {}
+        },
+        {
+          "id": "el-2",
+          "structureId": "str-main",
+          "parentId": null,
+          "type": "chapter",
+          "title": "Academic Development",
+          "content": "",
+          "order": 3,
+          "properties": {
+            "owner": "Report Administrator",
+            "reviewer": "Quality Reviewer",
+            "wordLimit": 2000,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884330724-js3wgu",
+          "structureId": "str-main",
+          "parentId": "el-1-1",
+          "type": "heading2",
+          "title": "New Heading 2",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784884334145-73cuhz",
+          "structureId": "str-main",
+          "parentId": "el-1784884330724-js3wgu",
+          "type": "heading3",
+          "title": "New Heading 3",
+          "content": "",
+          "order": 0,
+          "properties": {
+            "owner": "",
+            "reviewer": "",
+            "wordLimit": 600,
+            "description": "",
+            "include": [],
+            "exclude": [],
+            "evidenceTypes": [],
+            "expectedMetrics": [],
+            "contributors": []
+          }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
+        },
+        {
+          "id": "el-1784918926505-ocntmq",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 1,
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "id": "ver-1784918923689-k270es",
       "structureId": "str-main",
       "version": 14,
       "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:14:45.864Z",
+      "createdAt": "2026-07-24T18:48:43.689Z",
       "createdBy": "u1",
       "elements": [
         {
@@ -206,7 +2856,7 @@
           "type": "chapter",
           "title": "Institutional Overview",
           "content": "",
-          "order": 1,
+          "order": 2,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -242,7 +2892,7 @@
         {
           "id": "el-p1",
           "structureId": "str-main",
-          "parentId": "el-1",
+          "parentId": null,
           "type": "paragraph",
           "title": "Purpose note",
           "content": "Explain major developments against the institutional vision and mission.",
@@ -256,7 +2906,7 @@
           "type": "chapter",
           "title": "Academic Development",
           "content": "",
-          "order": 2,
+          "order": 3,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -308,15 +2958,25 @@
             "expectedMetrics": [],
             "contributors": []
           }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
         }
       ]
     },
     {
-      "id": "ver-1784916880626-8j3bli",
+      "id": "ver-1784918923675-tabwln",
       "structureId": "str-main",
       "version": 13,
-      "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:14:40.626Z",
+      "note": "Added paragraph",
+      "createdAt": "2026-07-24T18:48:43.675Z",
       "createdBy": "u1",
       "elements": [
         {
@@ -336,7 +2996,7 @@
           "type": "chapter",
           "title": "Institutional Overview",
           "content": "",
-          "order": 1,
+          "order": 2,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -372,7 +3032,7 @@
         {
           "id": "el-p1",
           "structureId": "str-main",
-          "parentId": "el-1-1",
+          "parentId": null,
           "type": "paragraph",
           "title": "Purpose note",
           "content": "Explain major developments against the institutional vision and mission.",
@@ -386,7 +3046,7 @@
           "type": "chapter",
           "title": "Academic Development",
           "content": "",
-          "order": 2,
+          "order": 3,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -438,15 +3098,25 @@
             "expectedMetrics": [],
             "contributors": []
           }
+        },
+        {
+          "id": "el-1784918923675-kwzs0g",
+          "structureId": "str-main",
+          "parentId": "el-2",
+          "type": "paragraph",
+          "title": "",
+          "content": "",
+          "order": 0,
+          "properties": {}
         }
       ]
     },
     {
-      "id": "ver-1784916873843-xnnyq5",
+      "id": "ver-1784918909963-0gi5eo",
       "structureId": "str-main",
       "version": 12,
       "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:14:33.843Z",
+      "createdAt": "2026-07-24T18:48:29.963Z",
       "createdBy": "u1",
       "elements": [
         {
@@ -466,7 +3136,7 @@
           "type": "chapter",
           "title": "Institutional Overview",
           "content": "",
-          "order": 1,
+          "order": 2,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -502,7 +3172,7 @@
         {
           "id": "el-p1",
           "structureId": "str-main",
-          "parentId": "el-1784884330724-js3wgu",
+          "parentId": null,
           "type": "paragraph",
           "title": "Purpose note",
           "content": "Explain major developments against the institutional vision and mission.",
@@ -516,7 +3186,7 @@
           "type": "chapter",
           "title": "Academic Development",
           "content": "",
-          "order": 2,
+          "order": 3,
           "properties": {
             "owner": "Report Administrator",
             "reviewer": "Quality Reviewer",
@@ -572,11 +3242,11 @@
       ]
     },
     {
-      "id": "ver-1784916859812-cyd60j",
+      "id": "ver-1784918900393-556c0r",
       "structureId": "str-main",
       "version": 11,
       "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:14:19.812Z",
+      "createdAt": "2026-07-24T18:48:20.393Z",
       "createdBy": "u1",
       "elements": [
         {
@@ -702,11 +3372,11 @@
       ]
     },
     {
-      "id": "ver-1784916845720-p7zez2",
+      "id": "ver-1784917654896-4mgvqc",
       "structureId": "str-main",
       "version": 10,
       "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:14:05.720Z",
+      "createdAt": "2026-07-24T18:27:34.896Z",
       "createdBy": "u1",
       "elements": [
         {
@@ -762,7 +3432,7 @@
         {
           "id": "el-p1",
           "structureId": "str-main",
-          "parentId": "el-1-1",
+          "parentId": "el-1",
           "type": "paragraph",
           "title": "Purpose note",
           "content": "Explain major developments against the institutional vision and mission.",
@@ -832,11 +3502,11 @@
       ]
     },
     {
-      "id": "ver-1784916839686-hk1lt3",
+      "id": "ver-1784917650982-idzjoy",
       "structureId": "str-main",
       "version": 9,
       "note": "Reordered report structure",
-      "createdAt": "2026-07-24T18:13:59.686Z",
+      "createdAt": "2026-07-24T18:27:30.982Z",
       "createdBy": "u1",
       "elements": [
         {

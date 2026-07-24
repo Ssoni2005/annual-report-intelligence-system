@@ -1,7 +1,7 @@
 {
   "name": "annual-report-intelligence-system",
   "private": true,
-  "version": "5.0.2-drag-inspector-hotfix",
+  "version": "7.9.2",
   "workspaces": [
     "apps/web",
     "apps/api"

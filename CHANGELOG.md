@@ -1,3 +1,15 @@
+# Changelog
+
+## v7.9.2 — Word-style heading hierarchy and verified structure-tree interactions
+
+- Free content elements can be placed at root or as children of any Title, Chapter, or Heading.
+- Heading hierarchy is governed independently: H2 must be under H1, H3 under H2, H4 under H3, and H5 under H4.
+- H1 may be at root or under an unnumbered Title/Chapter.
+- Drag previews now show valid inside/before/after placement and a clear invalid-placement explanation.
+- Caption constraints remain enforced: one matching caption immediately after each Table, Image, or Text Box.
+- Restored and portal-mounted the element right-click menu above all tree layers.
+- Persistent Inspector remains available and paragraphs/content remain collapsible inline.
+
 ## v7.9.1 — Drag Inspector Hotfix
 
 - Restored the missing `Inspector` component used by the persistent right panel.
